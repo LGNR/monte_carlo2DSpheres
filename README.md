@@ -1,4 +1,4 @@
-#Monte Carlo esferas duras 2D
+# Monte Carlo esferas duras 2D
 
 Simulación de Monte Carlo para esferas duras en 2D
 
