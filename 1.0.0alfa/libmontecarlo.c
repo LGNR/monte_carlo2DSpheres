@@ -81,7 +81,7 @@ float montecarlo(int NM_PART, int leer, float pared_DE, float pared_IZ, float pa
 	float L_boxy = pared_AB+pared_AR;
 	/* Consider previous configurations */
 	rho=NM_PART/(L_boxx*L_boxy);
-	//printf("Simulación comenzada:\nrho=%f fracción de empacamiento=%f \nNúmero de partículas=%d \nIteraciones programadas=%d\n", rho,(PI*rho)/4,NM_PART, SIM_TOT );
+	printf("Simulación comenzada:\nrho=%f fracción de empacamiento=%f \nNúmero de partículas=%d \nIteraciones programadas=%d\n", rho,(PI*rho)/4,NM_PART, SIM_TOT );
 	stepz=0.01;
 	
 	/*Squared boxes are considered */
@@ -92,7 +92,7 @@ float montecarlo(int NM_PART, int leer, float pared_DE, float pared_IZ, float pa
 	for(i=0; i<size_g; i++)
 		g[i]=0;
 	
-
+	//printf("Monte Carlo inicializado...\n");
 	/*Monte Carlo main loop */
 	
 	do
@@ -184,15 +184,17 @@ float montecarlo(int NM_PART, int leer, float pared_DE, float pared_IZ, float pa
 	 //There is an upper bound for the number of simulations
 	 
 	 // Calcula el Factor de esctructura
-	 factor_de_estructura(NM_PART, L_boxx, L_boxy, SIM_TOT);
+	 //factor_de_estructura(NM_PART, L_boxx, L_boxy, SIM_TOT);
      
 	}while(sim<SIM_TOT);
+
+	printf("Fin de toda simulación...\n");
 	/* Ends all iterations of MonteCarlo */
 	
 	//Note: This piece of code can be adapted to an independent MC library
 
 	/*Preassure calculation */
-
+	printf("Densidad y presión\n");
 	float suma;	
 	float beta_presion__rho;
 	float beta=1/KbT;
@@ -209,9 +211,10 @@ float montecarlo(int NM_PART, int leer, float pared_DE, float pared_IZ, float pa
 		}
 	}
     ////SALIDA FINAL////
-    /// Presión vs. densidad ///
-	printf("%f %f\n",beta_presion__rho,(PI*rho)/4);  //Preasure output after SIM_TOT MC iterations
+    /// Densidad y presión ///
+	printf("%f %f\n",(PI*rho)/4,beta_presion__rho);  //Preasure output after SIM_TOT MC iterations
 	
+	printf("Aceptación=%f\n", acc/intentos);
 
 	/* g(r) output to text file */
 	FILE * pFile;
@@ -231,6 +234,7 @@ float montecarlo(int NM_PART, int leer, float pared_DE, float pared_IZ, float pa
 	fclose (pFile);
 
     /* Salida del factor de estructura */	
+	/*
 	int ki;
 	FILE * pFile2;
 	pFile2 = freopen ("s_k.txt","w",stdout);
@@ -242,8 +246,8 @@ float montecarlo(int NM_PART, int leer, float pared_DE, float pared_IZ, float pa
   	}
 	fclose (pFile2);
 	//getchar();
-
-	//printf("Simulación terminada. Aceptación=%f", acc/intentos);
+	*/
+	
 	return acc/intentos;
 }
 
@@ -348,7 +352,7 @@ int coloca_nueva(float stepx, float stepy, float pared_DE, float pared_IZ, float
 	return 1;
 
 }
-
+// To be implemented 
 int factor_de_estructura(int NM_PART, int SIM_TOT)
 {
 
