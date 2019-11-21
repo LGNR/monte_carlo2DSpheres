@@ -18,7 +18,7 @@ Ejemplo de uso:
 
 $ ./monte_carlo 100 0 10 10 10 10 1000
 
-En este caso el parámetro [leer configuraciones] es sólo o 1 o 0, para leer desde el archivo de datos "configuracion.txt". Los tamaños de la pared son en unidades del sistema, y establece longitudes hacia la derecha, hacia la izquierda, hacia arriba, y hacia abajo. El [número de simulaciones] define la cantidad de corridas de Monte Carlo para la obtención del dato final de presión.
+El primer parámetro es el número de esferas duras de la simulación. El segundo parámetro [leer configuraciones] es sólo o 1 o 0, para leer desde el archivo de datos "configuracion.txt". Los tamaños de la pared son en unidades del sistema, y establece longitudes hacia la derecha, hacia la izquierda, hacia arriba, y hacia abajo. El [número de simulaciones] define la cantidad de corridas de Monte Carlo para la obtención del dato final de presión.
 
 Se pueden configurar parámetros dentro del código para realizar visualización con PGPlot.
 
