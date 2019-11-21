@@ -1,0 +1,7 @@
+*.[oa]
+*.txt
+*.save
+*.dat
+**/.settings
+**/.cdtproject
+**/.project
