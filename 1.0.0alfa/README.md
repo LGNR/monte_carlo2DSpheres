@@ -4,7 +4,7 @@ Simulación de Monte Carlo para esferas duras en 2D
 
 Proyecto de tesis y de investigación con el Dr. Adrián Huerta, Universidad Veracruzana.
 
-El programa principal saca como resultado el par densidad y presión, para que, por muchas ejecuciones en paralelo, en sistemas multiprocesador, se genere la ecuación de estado. Dentro de esto, el programa escribe en archivo g_r.txt la función de distribución radial de la simulación. Al final del programa se escribe en configuracion.txt si la opción está activa dentro del código.
+El programa principal saca como resultado el par densidad y presión, para que, por muchas ejecuciones en paralelo, en sistemas multiprocesador, se genere la ecuación de estado. Dentro de esto, el programa escribe en archivo g_r.txt la función de distribución radial de la simulación. Al final del programa se escribe en configuracion.txt si la opción está activa por la línea de comandos.
 
 Compilación:
 
