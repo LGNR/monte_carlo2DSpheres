@@ -1,7 +1,9 @@
+
 *.[oa]
 *.txt
 *.save
 *.dat
+**/.gitignore
 **/.settings
 **/.cdtproject
 **/.project
