@@ -12,7 +12,8 @@ make all
 
 Uso:
 
-monte_carlo [particulas] [leer configuraciones] [pared derecha] [pared  iquierda] [pared arriba] [pared abajo] [número de simulaciones]
+Uso:
+monte_carlo [particulas] [¿leer configuraciones?] [pared derecha] [pared  izquierda] [pared arriba] [pared abajo] [número de simulaciones] [¿Visualizacion?]
 
 Ejemplo de uso:
 
