@@ -6,7 +6,7 @@ Proyecto de tesis y de investigación con el Dr. Adrián Huerta, Universidad Ver
 
 Esto es una implementación en C la simulación de Monte Carlo encontrado en: 
 
-- M.P. Allen, D.J. Tildesley. "Computer Simulation of Liquids". Clarendon. Oxford University Press. 1989.
+M.P. Allen, D.J. Tildesley. "Computer Simulation of Liquids". Clarendon. Oxford University Press. 1989.
 
 
 
